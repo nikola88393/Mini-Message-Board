@@ -13,6 +13,8 @@ app.set("view engine", "ejs");
 app.use("/", indexRouter);
 app.use("/new", messageRouter);
 
+app.use("*", (req, res) => [res.render("404", { title: "404" })]);
+
 app.listen(8080, () => {
   console.log("Listening on port 8080");
 });
