@@ -1,4 +1,4 @@
-const messages = require("../messages");
+const { messages, add } = require("../messages");
 module.exports = {
   get: (req, res) => {
     res.render("newMessage", { title: "New message" });
@@ -6,7 +6,7 @@ module.exports = {
   post: (req, res) => {
     const text = req.body.text;
     const user = req.body.user;
-    messages.push({ text: text, user: user, added: new Date() });
+    add(text, user);
     res.redirect("/");
   },
 };

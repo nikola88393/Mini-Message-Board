@@ -6,6 +6,7 @@
     <ul>
       <% messages.map((message) => { %>
       <li>
+        <p>Id - <%= message.id%></p>
         <h3><%= message.text %></h3>
         <p><%= message.user %></p>
         <p><%= message.added %></p>
