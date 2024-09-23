@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('partials/head') %>
+  <%- include('partials/head', {title: message.id}) %>
   <body>
     <%- include('partials/nav') %>
     <div>
-      <p>Text - <%= text%></p>
-      <p>User - <%= user%></p>
-      <p>Added - <%= added%></p>
+      <p>Text - <%= message.text%></p>
+      <p>User - <%= message.user%></p>
+      <p>Added - <%= message.added%></p>
     </div>
     <%- include('partials/footer') %>
   </body>
