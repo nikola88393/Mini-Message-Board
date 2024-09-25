@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* Nav styles */
+.nav {
+  display: flex;
+  border: 1px solid rgb(202, 251, 255);
+  background-color: aliceblue;
+  color: crimson;
+  padding: 20px;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 10px;
+}
+
+.navLink {
+  color: black;
+  font-weight: 500;
+}
+
+/* Message container */
+.messages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.messageContainer {
+  border: 1px solid crimson;
+  border-radius: 6px;
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.msgBtn {
+  padding: 8px;
+  border-radius: 6px;
+  background-color: crimson;
+  color: white;
+  font-weight: 600;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* footer */
+footer {
+  border: 1px solid rgb(202, 251, 255);
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: auto;
+}
+/* 404 */
+.errorPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* add message */
+.msgForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button.msgBtn {
+  border: none;
+  cursor: pointer;
+}

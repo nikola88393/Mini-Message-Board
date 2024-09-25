@@ -3,14 +3,14 @@
   <%- include('partials/head', {title: title}) %>
   <body>
     <%- include('partials/nav') %>
-    <ul>
+    <ul class="messages">
       <% messages.map((message) => { %>
-      <li>
+      <li class="messageContainer">
         <p>Id - <%= message.id%></p>
         <h3><%= message.text %></h3>
         <p><%= message.user %></p>
         <p><%= message.added %></p>
-        <a href="/<%= message.id %>">View message</a>
+        <a class="msgBtn" href="/<%= message.id %>">View message</a>
       </li>
       <%}) %>
     </ul>
