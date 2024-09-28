@@ -11,6 +11,7 @@
         <p><%= message.user %></p>
         <p><%= message.added %></p>
         <a class="msgBtn" href="/<%= message.id %>">View message</a>
+        <a class="msgBtn" href="/delete/<%= message.id %>">Delete</a>
       </li>
       <%}) %>
     </ul>
