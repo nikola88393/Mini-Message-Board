@@ -18,7 +18,7 @@ VALUES
 async function main() {
   console.log("seeding...");
   const client = new Client({
-    connectionString: "postgresql://nikola:nikimiho2@localhost:5432/messages",
+    connectionString: process.env.CONNECTION_STRING,
   });
 
   await client.connect();
